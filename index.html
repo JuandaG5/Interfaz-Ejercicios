@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/principal.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <nav class="nav">
+        <div>
+          <h1 class="nav-title">Proyectos</h1>
+          <ul class="nav-links">
+            <li id="link-palabras" class="nav-links-link">Juego de palabras</li>
+            <li id="link-calculadora" class="nav-links-link">
+              Calculadora de grados
+            </li>
+            <li id="link-triangulo" class="nav-links-link">Triángulo</li>
+            <li id="link-docentes" class="nav-links-link">Docentes</li>
+            <li id="link-figuras" class="nav-links-link">
+              Figuras Geométricas
+            </li>
+          </ul>
+        </div>
+        <h2 class="nav-name">Juan David Cubillos</h2>
+      </nav>
+      <section class="section-right">
+        <div class="palabras">
+          <form name="string">
+            <input
+              type="text"
+              id="string"
+              name="string"
+              required
+              placeholder="Ingresa aquí una palabra"
+            />
+            <div class="buttons">
+              <button type="button" id="long">Longitud</button>
+              <button type="button" id="upper">Mayúsculas</button>
+              <button type="button" id="lower">Minúsculas</button>
+              <button type="button" id="first">Primer carácter</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="calculadora">
+          <div class="convert">
+            <div>
+              <label for="calculadora">Vas a convertir de: </label>
+              <select id="calculadora" name="calculadora">
+                <option name="calculadora" selected>Escoge una opción</option>
+                <option value="Farenheit" name="calculadora">Farenheit</option>
+                <option value="Celsius" name="calculadora">Celsius</option>
+                <option value="Kelvin" name="calculadora">Kelvin</option>
+              </select>
+            </div>
+            <div>
+              <label for="calculadora2">Deseas convertir a: </label>
+              <select id="calculadora2" name="calculadora">
+                <option name="calculadora" elected>Escoge una opción</option>
+                <option value="Farenheit" name="calculadora">Farenheit</option>
+                <option value="Celsius" name="calculadora">Celsius</option>
+                <option value="Kelvin" name="calculadora">Kelvin</option>
+              </select>
+            </div>
+          </div>
+          <div class="grados">
+            <input
+              type="number"
+              id="input-convert"
+              placeholder="Ingrese grados"
+            />
+            <button id="button-convert">Convertir</button>
+          </div>
+        </div>
+        <div class="triangulo">
+          <input
+            type="number"
+            id="lados"
+            name="lados"
+            required
+            placeholder="Ingrese el primer lado"
+          />
+          <input
+            type="number"
+            id="lados2"
+            name="lados2"
+            required
+            placeholder="Ingrese el segundo lado"
+          />
+          <input
+            type="number"
+            id="lados3"
+            name="lados3"
+            required
+            placeholder="Ingrese el tercer lado"
+          />
+          <button type="button" id="determinar">Determinar</button>
+        </div>
+        <div class="figuras">
+          <div class="figuras-triangulo">
+            <div class="triangulo"></div>
+            <div class="buttons">
+              <button id="triangulo-area" type="button">Área</button>
+              <button id="triangulo-perimetro" type="button">Perímetro</button>
+            </div>
+          </div>
+          <div class="figuras-circulo">
+            <div class="circulo"></div>
+            <div class="buttons">
+              <button id="circulo-area" type="button">Área</button>
+              <button id="circulo-perimetro" type="button">Perímetro</button>
+            </div>
+          </div>
+          <div class="figuras-cuadrado">
+            <div class="cuadrado"></div>
+            <div class="buttons">
+              <button id="cuadrado-area" type="button">Área</button>
+              <button id="cuadrado-perimetro" type="button">Perímetro</button>
+            </div>
+          </div>
+          <div class="figuras-rectangulo">
+            <div class="rectangulo"></div>
+            <div class="buttons">
+              <button id="rectangulo-area" type="button">Área</button>
+              <button id="rectangulo-perimetro" type="button">Perímetro</button>
+            </div>
+          </div>
+          <dialog id="modal-area-triangulo" class="modal">
+            <form method="dialog">
+              <input type="text" placeholder="Ingrese la base" />
+              <input type="text" placeholder="Ingrese la altura" />
+              <button type="button">Calcular</button>
+              <button type="submit">X</button>
+            </form>
+          </dialog>
+          <dialog id="modal-area-triangulo" class="modal">
+            <form method="dialog">
+              <input type="text" placeholder="Ingrese la base" />
+              <input type="text" placeholder="Ingrese la altura" />
+              <button type="button">Calcular</button>
+              <button type="submit">X</button>
+            </form>
+          </dialog>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/init.js"></script>
+    <script src="assets/js/palabras.js"></script>
+    <script src="assets/js/navegacion.js"></script>
+    <script src="assets/js/calculadora.js"></script>
+    <script src="assets/js/triangulo.js"></script>
+    <script src="assets/js/figuras.js"></script>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+:root {
+  --gray: rgb(50, 50, 60);
+  --pink: rgb(255, 20, 147);
+  --purple: rgb(131, 0, 138);
+  --gray-light: rgb(67, 67, 75);
+  --light-purple: rgb(191, 3, 201);
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  background-color: var(--gray);
+  justify-content: space-between;
+  grid-template-columns: 25% 75%;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  background-color: var(--gray);
+  justify-content: space-between;
+  .nav-title {
+    padding: 1rem;
+    font-size: 3.5rem;
+  }
+
+  .nav-links {
+    .nav-links-link {
+      padding: 1rem;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      transition: padding 0.5s ease, background-color 0.2s ease;
+
+      &:hover {
+        cursor: pointer;
+        padding-left: 3rem;
+        background-color: var(--purple);
+      }
+    }
+  }
+
+  .nav-name {
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+.section-right {
+  display: grid;
+  place-content: center;
+  border-top-left-radius: 1.5rem;
+  background-color: var(--purple);
+  border-bottom-left-radius: 1.5rem;
+}
+
+.palabras {
+  padding: 1rem;
+  min-width: 400px;
+  min-height: 130px;
+  border-radius: 0.5rem;
+  background-color: var(--gray);
+
+  form {
+    display: flex;
+    row-gap: 0.5rem;
+    flex-direction: column;
+
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+
+      &:hover {
+        cursor: text;
+        outline: 2px solid black;
+      }
+
+      &:focus {
+        outline: 2px solid black;
+      }
+    }
+
+    button {
+      border: none;
+      color: white;
+      padding: 0.5rem;
+      font-weight: bold;
+      border-radius: 5px;
+      background-color: var(--purple);
+      transition: background-color 0.5s ease;
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--pink);
+      }
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.calculadora {
+  gap: 2rem;
+  display: flex;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  background-color: var(--gray);
+  justify-content: space-between;
+
+  .grados {
+    gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+
+    input {
+      width: 70%;
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+      border-radius: 0.3rem;
+      transition: outline 0.2s ease;
+
+      &:hover {
+        cursor: text;
+        outline: 2px solid black;
+      }
+    }
+
+    button {
+      color: white;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-weight: bold;
+      padding-inline: 1rem;
+      border-radius: 0.3rem;
+      text-transform: uppercase;
+      background-color: var(--purple);
+      transition: background-color 0.5s ease;
+
+      &:hover {
+        background-color: var(--pink);
+      }
+    }
+  }
+
+  .convert {
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  select {
+    border: none;
+    outline: none;
+    padding: 0.2rem;
+    margin-left: 0.5rem;
+    border-radius: 0.3rem;
+    background-color: white;
+    transition: outline 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      outline: 2px solid black;
+    }
+  }
+}
+
+.long {
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.triangulo {
+  gap: 2rem;
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  color: white;
+  border-radius: 0.3rem;
+  background-color: var(--gray);
+  justify-content: space-between;
+
+  input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    transition: outline 0.2s ease;
+
+    &:hover {
+      cursor: text;
+      outline: 2px solid black;
+    }
+  }
+
+  button {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    background-color: var(--purple);
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--light-purple);
+    }
+  }
+}
+
+.figuras {
+  gap: 1rem;
+  display: grid;
+  height: 30rem;
+  place-content: center;
+  grid-template-columns: 1fr 1fr;
+
+  .figuras-triangulo,
+  .figuras-circulo,
+  .figuras-cuadrado,
+  .figuras-rectangulo {
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--gray);
+  }
+
+  .circulo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: var(--purple);
+  }
+  .cuadrado {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 0.3rem;
+    background-color: var(--purple);
+  }
+  .rectangulo {
+    width: 12rem;
+    height: 8rem;
+    border-radius: 0.3rem;
+    background-color: var(--purple);
+  }
+
+  .triangulo {
+    width: 0;
+    height: 0;
+    padding: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 140px solid var(--purple);
+  }
+
+  .buttons {
+    gap: 1rem;
+    display: flex;
+    button {
+      width: 6rem;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 0.2rem;
+      font-weight: bold;
+      border-radius: 0.2rem;
+      text-transform: uppercase;
+      background-color: var(--purple);
+    }
+  }
+}
+
+#modal {
+  top: 50%;
+  left: 50%;
+  border: none;
+  width: 20rem;
+  height: 20rem;
+  padding: 4rem;
+  position: absolute;
+  border-radius: 0.3rem;
+  transform: translate(-50%, -50%);
+  background-color: var(--gray-light);
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  form {
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+
+    input {
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+      border-radius: 0.3rem;
+    }
+
+    button {
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      font-weight: bold;
+      border-radius: 0.3rem;
+      text-transform: uppercase;
+      background-color: var(--purple);
+    }
+
+    button:nth-of-type(2) {
+      top: 10px;
+      right: 10px;
+      width: 2.5rem;
+      height: 2.5rem;
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+}
