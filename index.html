@@ -129,17 +129,56 @@
           </div>
           <dialog id="modal-area-triangulo" class="modal">
             <form method="dialog">
-              <input type="text" placeholder="Ingrese la base" />
-              <input type="text" placeholder="Ingrese la altura" />
-              <button type="button">Calcular</button>
+              <input
+                id="triangulo-input-base"
+                type="number"
+                placeholder="Ingrese la base"
+              />
+              <input
+                id="triangulo-input-altura"
+                type="number"
+                placeholder="Ingrese la altura"
+              />
+              <button type="button" class="calcular">Calcular</button>
               <button type="submit">X</button>
             </form>
           </dialog>
-          <dialog id="modal-area-triangulo" class="modal">
+          <dialog id="modal-perimetro-triangulo" class="modal">
             <form method="dialog">
-              <input type="text" placeholder="Ingrese la base" />
-              <input type="text" placeholder="Ingrese la altura" />
-              <button type="button">Calcular</button>
+              <input id="lado1" type="number" placeholder="Ingrese lado 1" />
+              <input id="lado2" type="number" placeholder="Ingrese lado 2" />
+              <input id="lado3" type="number" placeholder="Ingrese lado 3" />
+              <button type="button" class="calcular">Calcular</button>
+              <button type="submit">X</button>
+            </form>
+          </dialog>
+          <dialog id="modal-area-rectangulo" class="modal">
+            <form method="dialog">
+              <input
+                id="input-rectangulo-largo"
+                type="number"
+                placeholder="Ingrese el largo"
+              />
+              <input
+                id="input-rectangulo-ancho"
+                type="number"
+                placeholder="Ingrese el ancho"
+              />
+              <button type="button" class="calcular">Calcular</button>
+              <button type="submit">X</button>
+            </form>
+          </dialog>
+          <dialog id="modal-area-cuadrado" class="modal">
+            <form method="dialog">
+              <input id="cuadrado-input-lado" type="number" placeholder="Ingrese el lado" />
+              <button type="button" class="calcular">Calcular</button>
+              <button type="submit">X</button>
+            </form>
+          </dialog>
+          <dialog id="modal-area-circulo" class="modal">
+            <form method="dialog">
+              <input id= "circulo-input-radio" type="number" placeholder="Ingrese el radio" />
+              <button type="button" class="calcular">Calcular</button>
               <button type="submit">X</button>
             </form>
           </dialog>
